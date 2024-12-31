@@ -74,7 +74,7 @@ Ensure you have the following installed on your system:
 ### Steps
 1. **Clone the Repository**:
    ```bash
-   git clone <repository-url>
+   git clone <[repository-url](https://github.com/farouzJr/dl_flower_classifier.git)>
    cd flower_classifier
    ```
 
