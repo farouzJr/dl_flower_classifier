@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Classifier</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body class="background">
+    <header class="header">
+        <h1 class="title">تصنيف الزهور</h1>
+    </header>
+    <div class="form-container">
+        <form method="POST" enctype="multipart/form-data" class="upload-form">
+            {% csrf_token %}
+            <label for="image" class="file-label">اختر صورة</label>
+            <input type="file" name="image" id="image" accept="image/*" required>
+            <button type="submit" class="submit-button">رفع وتنبؤ</button>
+        </form>
+    </div>
+</body>
+</html>

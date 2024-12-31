@@ -1,0 +1,12 @@
+__pycache__
+flower_classifier\db.sqlite3
+*.pth
+flower_classifier\media
+train/
+Test/
+*.cpython-*
+*.jpg
+!nb_img.jpg
+augmented_train
+Models
+playground

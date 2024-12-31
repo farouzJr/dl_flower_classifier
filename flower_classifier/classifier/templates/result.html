@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نتيجة التصنيف</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body class="background">
+    <header class="header">
+        <h1 class="title">نتيجة التصنيف</h1>
+    </header>
+    <div class="result-container">
+        <p>النتيجة: <span class="flower-name">{{ predicted_class }}</span></p>
+        <p>معلومات عن الزهرة:</p>
+        <p class="flower-info">{{ flower_info_ar }}</p>
+        <p><strong>Flower Information:</strong> {{ flower_info_en }}</p>
+        <img src="{{ image_url }}" alt="Uploaded Image" class="uploaded-image">
+        <a href="/" class="back-link">رفع صورة أخرى</a>
+    </div>
+</body>
+</html>
